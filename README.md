@@ -41,15 +41,19 @@ Since standard accuracy does not align with the competition's rules, we built a 
 ### Folder Structure
 Ensure your dataset is organized as follows before running:
 
-├── main.py
-├── train/
-│   ├── class_chlorella/
-│   ├── class_debris/
-│   ├── class_haematococcus/
-│   ├── class_small_haemato/
-│   └── class_small_particle/
-└── test/
-    ├── 001.png
+microscopic-classification/
+├── main.py                     # Main Python script containing the dataset loader, model, training loop, and evaluation
+├── best_model.pth              # Saved weights of the best performing model (generated during training)
+├── submission.csv              # Final predictions generated for the test set (generated after execution)
+├── README.md                   # Project documentation and setup instructions
+├── train/                      # Training dataset directory
+│   ├── class_chlorella/        # Contains target class images
+│   ├── class_debris/           # Contains background noise images
+│   ├── class_haematococcus/    # Contains other algae class images
+│   ├── class_small_haemato/    # Contains small haematococcus images
+│   └── class_small_particle/   # Contains small particle images
+└── test/                       # Testing dataset directory
+    ├── 001.png                 # Unlabeled test images
     ├── 002.png
     └── ...
     
