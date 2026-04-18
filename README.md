@@ -40,7 +40,7 @@ Since standard accuracy does not align with the competition's rules, we built a 
 
 ### Folder Structure
 Ensure your dataset is organized as follows before running:
-
+'''
 .
 └── microscopic-classification/
     ├── main.py/
@@ -57,7 +57,7 @@ Ensure your dataset is organized as follows before running:
         ├── 001.png
         ├── 002.png
         └── ... 
-        
+'''
 ## Running the Pipeline
 
 To train the model, optimize the threshold, and generate predictions, simply run:
