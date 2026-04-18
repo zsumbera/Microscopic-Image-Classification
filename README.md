@@ -62,6 +62,8 @@ Ensure your dataset is organized as follows before running:
 
 To train the model, optimize the threshold, and generate predictions, simply run:
 
-Bash
+```bash
 python main.py
+```
+
 The script will automatically output a submission.csv containing the final predictions, ready for the competition.
