@@ -40,7 +40,7 @@ Since standard accuracy does not align with the competition's rules, we built a 
 
 ### Folder Structure
 Ensure your dataset is organized as follows before running:
-
+'''
 microscopic-classification/
 ├── main.py
 │   └── Main script containing the dataset loader, model definition, training loop, and evaluation pipeline.
@@ -71,7 +71,7 @@ microscopic-classification/
     ├── 002.png
     └── ...
         └── Unlabeled test images used for inference.
-    
+    '''
 ## Running the Pipeline
 
 To train the model, optimize the threshold, and generate predictions, simply run:
