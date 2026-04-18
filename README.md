@@ -42,20 +42,35 @@ Since standard accuracy does not align with the competition's rules, we built a 
 Ensure your dataset is organized as follows before running:
 
 microscopic-classification/
-├── main.py                     # Main Python script containing the dataset loader, model, training loop, and evaluation
-├── best_model.pth              # Saved weights of the best performing model (generated during training)
-├── submission.csv              # Final predictions generated for the test set (generated after execution)
-├── README.md                   # Project documentation and setup instructions
-├── train/                      # Training dataset directory
-│   ├── class_chlorella/        # Contains target class images
-│   ├── class_debris/           # Contains background noise images
-│   ├── class_haematococcus/    # Contains other algae class images
-│   ├── class_small_haemato/    # Contains small haematococcus images
-│   └── class_small_particle/   # Contains small particle images
-└── test/                       # Testing dataset directory
-    ├── 001.png                 # Unlabeled test images
+├── main.py
+│   └── Main script containing the dataset loader, model definition, training loop, and evaluation pipeline.
+│
+├── best_model.pth
+│   └── Saved weights of the best-performing model (generated during training).
+│
+├── submission.csv
+│   └── Final predictions for the test set (generated after running inference).
+│
+├── README.md
+│   └── Project documentation and setup instructions.
+│
+├── train/
+│   ├── class_chlorella/
+│   │   └── Training images for Chlorella class.
+│   ├── class_debris/
+│   │   └── Background/noise images.
+│   ├── class_haematococcus/
+│   │   └── Training images for Haematococcus algae.
+│   ├── class_small_haemato/
+│   │   └── Small Haematococcus samples.
+│   └── class_small_particle/
+│       └── Small particle images.
+│
+└── test/
+    ├── 001.png
     ├── 002.png
     └── ...
+        └── Unlabeled test images used for inference.
     
 ## Running the Pipeline
 
