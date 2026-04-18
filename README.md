@@ -40,38 +40,35 @@ Since standard accuracy does not align with the competition's rules, we built a 
 
 ### Folder Structure
 Ensure your dataset is organized as follows before running:
+
 '''
-microscopic-classification/
-├── main.py
-│   └── Main script containing the dataset loader, model definition, training loop, and evaluation pipeline.
-│
-├── best_model.pth
-│   └── Saved weights of the best-performing model (generated during training).
-│
-├── submission.csv
-│   └── Final predictions for the test set (generated after running inference).
-│
-├── README.md
-│   └── Project documentation and setup instructions.
-│
-├── train/
-│   ├── class_chlorella/
-│   │   └── Training images for Chlorella class.
-│   ├── class_debris/
-│   │   └── Background/noise images.
-│   ├── class_haematococcus/
-│   │   └── Training images for Haematococcus algae.
-│   ├── class_small_haemato/
-│   │   └── Small Haematococcus samples.
-│   └── class_small_particle/
-│       └── Small particle images.
-│
-└── test/
-    ├── 001.png
-    ├── 002.png
-    └── ...
-        └── Unlabeled test images used for inference.
-    '''
+
++ microscopic-classification/
+  + main.py
+    + Main script containing the dataset loader, model definition, training loop, and evaluation pipeline.
+  + best_model.pth
+    + Saved weights of the best-performing model (generated during training).
+  + submission.csv
+    + Final predictions for the test set (generated after running inference).
+  + README.md
+    + Project documentation and setup instructions.
+  + train/
+    + class_chlorella/
+      + Training images for Chlorella class.
+    + class_debris/
+      + Background/noise images.
+    + class_haematococcus/
+      + Training images for Haematococcus algae.
+    + class_small_haemato/
+      + Small Haematococcus samples.
+    + class_small_particle/
+      + Small particle images.
+  + test/
+    + 001.png
+    + 002.png
+    + ...
+      + Unlabeled test images used for inference.
+'''
 ## Running the Pipeline
 
 To train the model, optimize the threshold, and generate predictions, simply run:
